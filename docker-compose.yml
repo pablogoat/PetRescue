@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:alpine
+    restart: always
+    environment:
+      POSTGRES_DB: PetRescueDatabase
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: pet
+    ports:
+      - "5432:5432"
